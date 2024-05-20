@@ -1,0 +1,59 @@
+body { 
+    margin: 0; /* Remove the default margin */
+}
+
+#image-row { 
+    /* Use flexbox to arrange the images in a row */
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+    gap: 40px;
+}
+
+img { 
+    /* Prevent images from exceeding the width of their parent */
+    max-width: 100%;
+    height: auto;
+}
+
+#img-A {
+    filter: brightness(50%);
+}
+
+#img-B {
+    filter: blur(2px);
+}
+
+#img-C {
+    filter: grayscale();
+}
+  
+
+#click-me {
+
+    --gradientColour1: #ffffff;
+    --gradientColour2: #e6e6e6;
+
+    /* Centre the button */
+    display: block;
+    margin: auto;
+
+    /* Style the button to look nice */
+    color: black;
+    border: none;
+    padding: 1em;
+
+    border-radius: 1em;
+    background: linear-gradient(145deg, var(--gradientColour1), var(--gradientColour2));
+    box-shadow:  9px 9px 25px #a1a1a1,
+             -9px -9px 25px #ffffff;
+
+    font-size: 2em;
+    font-weight: bold;
+}
+
+#click-me:hover {
+    --gradientColour1: #e6e6e6;
+    --gradientColour2: #ffffff;
+    cursor: pointer;
+}
